@@ -1,0 +1,33 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-color: #03071e;
+}
+.navbar-nav a{
+    color: white;
+}
+.cartelera{
+    padding: 30px 20px;
+    background:linear-gradient(
+    0deg,rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)),
+    url("https://www.10wallpaper.com/wallpaper/1366x768/1805/2018_Ready_Player_One_4K_HD_Movies_1366x768.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+#estrenos{
+    margin-bottom: 15px;
+}
+footer{
+    background-color: #03071e;
+    padding: 30px 0px;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
