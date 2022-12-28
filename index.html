@@ -17,14 +17,13 @@
 
   <!-- Navegacion -->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html"><img src="img/logo-corto.png" class="w-25" alt=""></a>
-      <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-        aria-label="Toggle navigation">
+    <div class="container-fluid navegacion">
+      <a class="navbar-brand" href="#"><img src="img/logo-corto.png" class="w-25" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" href="#">Inicio</a>
           <a class="nav-link" href="#">Alimentos</a>
@@ -58,14 +57,14 @@
   <!-- Cartelera de peliculas -->
   <div class="cartelera">
     <div class="container">
-      <h2 class="text-center text-warning fs-5">Cartelera</h2>
-      <p class="text-warning">Estrenos</p>
+      <p class="text-center text-warning display-4">Cartelera</p>
+      <p class="text-warning display-6">Estrenos</p>
       <div id="estrenos" class="container d-flex justify-content-around">
         <img src="img/pelicula1.jpeg" alt="" class="w-25">
         <img src="img/pelicula1.jpeg" alt="" class="w-25">
         <img src="img/pelicula1.jpeg" alt="" class="w-25">
       </div>
-      <p class="text-warning">Todas las peliculas</p>
+      <p class="text-warning display-6">Todas las peliculas</p>
       <div id="estrenos" class="container d-flex justify-content-around">
         <img src="img/pelicula2.jpg" alt="" class="w-25">
         <img src="img/pelicula2.jpg" alt="" class="w-25">
@@ -75,17 +74,17 @@
   </div>
   <!-- Pie de pagina -->
   <footer>
-    <div class="container-fluid d-flex flex-column align-items-center">
-      <img src="img/logo.png" alt="" class="w-75">
+    <div class="container-fluid d-flex flex-column align-items-center flex-lg-row">
+      <img src="img/logo.png" alt="" class="w-75 order-lg-2">
       <div class="container-fluid d-flex justify-content-evenly">
         <div class="sucursales">
           <h4 class="text-warning">Sucursales</h4>
-            <div id="listaSucursales" class="d-flex flex-column">
-              <a href="">CDMX Norte</a>
-              <a href="">CDMX Oriente</a>
-              <a href="">Reforma</a>
-              <a href="">Perisur</a>
-            </div>
+          <div id="listaSucursales" class="d-flex flex-column">
+            <a href="">CDMX Norte</a>
+            <a href="">CDMX Oriente</a>
+            <a href="">Reforma</a>
+            <a href="">Perisur</a>
+          </div>
         </div>
         <div class="redes">
           <h4 class="text-warning">Contacto</h4>

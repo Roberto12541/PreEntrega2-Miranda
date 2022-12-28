@@ -4,6 +4,9 @@
 nav{
     background-color: #03071e;
 }
+.navegacion{
+    padding: 0px 20px;
+}
 .navbar-nav a{
     color: white;
 }
