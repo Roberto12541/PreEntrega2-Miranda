@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 60px;
+}
+header .container__header {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container__header a {
+  color: #00a3ff;
+  font-weight: 700;
+  font-size: 20px;
+}
+header .container__header .menu {
+  height: 0px;
+  position: absolute;
+  right: 5px;
+  top: 65px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0px 0px 30px -20px rgba(0, 0, 0, 0.5);
+  transition: all 300ms;
+}
+header .container__header .menu nav ul {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  background: #fff;
+}
+header .container__header .menu nav ul li {
+  list-style: none;
+  padding: 10px 40px;
+}
+header .container__header .menu nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #000;
+  transition: opacity 300ms;
+}
+header .container__header .mostrar_menu {
+  height: 235px;
+}
+header .container__header #icon_menu {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+}
+header .container__header .header__register {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .container__header #icon_menu {
+    display: none;
+  }
+  header .container__header .header__register {
+    display: block;
+  }
+  header .container__header .menu {
+    position: relative;
+    overflow: visible;
+    top: 0;
+    right: 0;
+    height: auto;
+  }
+  header .container__header .menu nav ul {
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+  }
+  header .container__header .menu nav ul li {
+    padding: 0;
+  }
+}
+.btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: #00a3ff;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.75);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bannerP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.nosotros {
+  padding: 20px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.nosotros__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.nosotros__cuerpo {
+  text-align: justify;
+}
+.nosotros__imagen img {
+  width: 100%;
+}
+
+.promociones {
+  padding: 20px;
+  background-color: black;
+}
+.promociones__title {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.promociones .promociones__productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+.promociones .promociones__productos .tarjeta {
+  max-width: 200px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.promociones .promociones__productos img {
+  width: 100%;
+}
+.promociones .promociones__productos .tarjeta__cuerpo {
+  padding: 10px 15px;
+}
+
+footer {
+  padding: 5px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .nosotros {
+    padding: 50px;
+  }
+  .nosotros .nosotros__texto {
+    max-width: 500px;
+  }
+  .nosotros__imagen {
+    width: 60%;
+  }
+  .nosotros__cuerpo {
+    padding: 10px;
+  }
+  .promociones .promociones__productos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .nosotros {
+    flex-direction: row;
+  }
+  .nosotros .nosotros__title, .nosotros .nosotros__cuerpo {
+    text-align: left;
+    padding: 5px 0px;
+  }
+  .nosotros .nosotros__imagen {
+    width: 100%;
+  }
+  .promociones .promociones__productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .nosotros .nosotros__imagen {
+    width: 80%;
+  }
+  .promociones .promociones__productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros .nosotros__imagen {
+    width: 80%;
+  }
+  .promociones .promociones__productos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
