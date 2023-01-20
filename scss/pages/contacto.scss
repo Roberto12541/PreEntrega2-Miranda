@@ -1,0 +1,47 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__info{
+        padding: 10px;
+        margin: 20px 0px;
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &-icons{
+            margin: 10px 0px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        & ul li{
+            padding: 5px 0px;
+        }
+    }
+    &__mapa{
+        padding: 10px;
+        margin: 20px 0px;
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        iframe{
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}
+@media (min-width: 768px){
+    .contacto{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+@media (min-width: 992px){
+    .contacto{
+        max-width: 900px;
+    }
+}

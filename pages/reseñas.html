@@ -6,117 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>TecnoStore</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-lg-top">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">TecnoStore</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                    <a class="nav-link" href="./sobre-nosotros.html">Quienes Somos</a>
-                    <a class="nav-link" href="./productos.html">Productos</a>
-                    <a class="nav-link active" href="./reseñas.html">Reseñas</a>
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </div>
+    <header>
+
+        <div class="container__header">
+
+            <a href="../index.html">TecnoStore</a>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/productos.html">Productos</a></li>
+                        <li><a href="../pages/sobre-nosotros.html">Quienes somos</a></li>
+                        <li><a href="../pages/reseñas.html">Reseñas</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
-    </nav>
+
+    </header>
+
     <main>
-        <section class="py-3">
-            <h2 class="text-center fw-bold">Reseñas</h2>
-            <div class="container py-3 d-lg-flex justify-content-lg-center gap-lg-3">
-                <div class="">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-4">
-                                <img src="../img/avatarM.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
+        <section class="resenias">
+            <h2>Reseñas</h2>
+            <div class="secciones">
+                <div class="secciones__cartas">
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="../img/avatarF.png" alt="">
+                        </div>
+                        <div class="opinion__texto">
+                            <h3>Titulo</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi quidem assumenda necessitatibus, fugit placeat!</p>
                         </div>
                     </div>
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-4">
-                                <img src="../img/avatarF.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="../img/avatarM.png" alt="">
+                        </div>
+                        <div class="opinion__texto">
+                            <h3>Titulo</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi quidem assumenda necessitatibus, fugit placeat!</p>
                         </div>
                     </div>
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-4">
-                                <img src="../img/avatarM.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
+                    <div class="opinion">
+                        <div class="opinion__img">
+                            <img src="../img/avatarF.png" alt="">
+                        </div>
+                        <div class="opinion__texto">
+                            <h3>Titulo</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi quidem assumenda necessitatibus, fugit placeat!</p>
                         </div>
                     </div>
                 </div>
-                <div class="border d-none d-lg-block p-3 w-25">
-                    <h4>Preguntas Frecuentes</h4>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
-                    <h4>Noticias</h4>
-                    <div class="d-flex flex-column gap-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Titulo de noticia</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                                    impedit fuga inventore id reiciendis distinctio.</p>
-                                <button class="botones">IR</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Titulo de noticia</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                                    impedit fuga inventore id reiciendis distinctio.</p>
-                                <button class="botones">IR</button>
-                            </div>
-                        </div>
+                <div class="secciones__preguntas">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="secciones__preguntas-link">
+                        <a href="">¿Como cancelo mi compra?</a>
+                        <a href="">¿Como cancelo mi compra?</a>
+                        <a href="">¿Como cancelo mi compra?</a>
+                        <a href="">¿Como cancelo mi compra?</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center py-2">
-        <span class="text-secondary">© Roberto Miranda 2023</span>
+    <footer>
+        <span class="footer__texto">© Roberto Miranda 2023</span>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
