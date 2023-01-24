@@ -9,7 +9,6 @@ header{
         justify-content: space-between;
         align-items: center;
         & a{
-            color: $colorAzul;
             font-weight: 700;
             font-size: 20px;
         }
@@ -26,15 +25,18 @@ header{
                 display: flex;
                 padding: 20px 0px;
                 flex-direction: column;
-                background: #fff;
                 & li{
                     list-style: none;
                     padding: 10px 40px;
-                    & a{
+                    & .item-nav{
                         font-size: 16px;
                         text-decoration: none;
-                        color: #000;
                         transition: opacity 300ms;
+                        color: gray;
+                        &-activo{
+                            color: black;
+                            @extend .item-nav;
+                        }
                     }
                 }
             }
@@ -49,7 +51,7 @@ header{
         }
     }
 }
-@media(min-width:768px){
+@include mediano(){
     header .container__header{ 
         padding: 0px 50px;
         & #icon_menu{

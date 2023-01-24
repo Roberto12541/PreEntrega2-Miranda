@@ -1,13 +1,8 @@
 .resenias{
     margin: 20px 5px;
-    h2{
-        text-align: center;
-    }
     & .secciones{
         padding: 20px 5px;
         &__cartas{
-            display: flex;
-            flex-direction: column;
             gap: 10px;
             & .opinion{
                 display: flex;
@@ -26,9 +21,6 @@
                     h3{
                         margin-bottom: 5px;
                     }
-                    p{
-                        text-align: justify;
-                    }
                 }
             }
         }
@@ -37,7 +29,7 @@
         }
     }
 }
-@media (min-width: 576px) {
+@include chico(){
     .resenias{
         & .secciones{
             padding: 20px 10px;
@@ -53,10 +45,9 @@
         }
     }
 }
-@media (min-width: 768px){
+@include mediano(){
     .resenias{
         & .secciones{
-            
             padding: 40px 20px;
             display: flex;
             gap: 10px;
@@ -83,7 +74,7 @@
         }
     }
 }
-@media (min-width: 992px){
+@include grande(){
     .resenias{
         & .secciones{
             max-width: 900px;
@@ -99,7 +90,4 @@
             }
         }
     }
-}
-@media (min-width: 1200px){
-    
 }

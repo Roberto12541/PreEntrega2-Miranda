@@ -13,39 +13,35 @@
 
 <body>
     <header>
-
         <div class="container__header">
-
-            <a href="../index.html">TecnoStore</a>
-
-            <div class="menu">
+            <a href="../index.html" class="c-azul">TecnoStore</a>
+            <div class="menu bg-blanco">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li><a href="../pages/sobre-nosotros.html">Quienes somos</a></li>
-                        <li><a href="../pages/reseñas.html">Reseñas</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                        <li><a href="../index.html" class="item-nav">Inicio</a></li>
+                        <li><a href="./productos.html" class="item-nav">Productos</a></li>
+                        <li><a href="./sobre-nosotros.html" class="item-nav">Quienes somos</a></li>
+                        <li><a href="./reseñas.html" class="item-nav-activo">Reseñas</a></li>
+                        <li><a href="./contacto.html" class="item-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
             <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
-
     </header>
 
     <main>
         <section class="resenias">
-            <h2>Reseñas</h2>
+            <h2 class="t-center">Reseñas</h2>
             <div class="secciones">
-                <div class="secciones__cartas">
+                <div class="secciones__cartas d-flex dflex-column">
                     <div class="opinion">
                         <div class="opinion__img">
                             <img src="../img/avatarF.png" alt="">
                         </div>
                         <div class="opinion__texto">
                             <h3>Titulo</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi quidem assumenda necessitatibus, fugit placeat!</p>
+                            <p class="t-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi commodi quidem assumenda necessitatibus, fugit placeat!</p>
                         </div>
                     </div>
                     <div class="opinion">
@@ -79,7 +75,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="t-center">
         <span class="footer__texto">© Roberto Miranda 2023</span>
     </footer>
     <script src="../js/script.js"></script>

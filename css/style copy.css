@@ -1,10 +1,11 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-ul,ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
-.colorAzul {
+.azul {
   color: #31d2f2;
 }
 .banner {
@@ -42,6 +43,6 @@ ul,ol{
 .promociones {
   background-color: black;
 }
-.mapa{
-    border-radius: 10px;
+.mapa {
+  border-radius: 10px;
 }

@@ -1,14 +1,11 @@
 .productos{
     margin: 20px 0px;
     & h2{
-        text-align: center;
         margin-bottom: 10px;
     }
     & .galeria-productos{
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
-        align-items: center;
         justify-items: center;
         & .tarjeta{
             max-width: 200px;
@@ -24,23 +21,27 @@
         }
     }
 }
-@media (min-width: 576px) {
+@include chico(){
     .productos .galeria-productos{
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-@media (min-width: 768px){
+@include mediano(){
     .productos .galeria-productos{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-@media (min-width: 992px){
+@include grande(){
     .productos .galeria-productos{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
-@media (min-width: 1200px){
-    .productos .galeria-productos{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+@include gigante(){
+    .productos{
+        max-width: 1024px;
+        margin: 20px auto;
+        & .galeria-productos{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
     }
 }

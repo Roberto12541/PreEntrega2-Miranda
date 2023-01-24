@@ -12,81 +12,78 @@
 </head>
 
 <body>
+
     <header>
-
         <div class="container__header">
-
-            <a href="./index.html">TecnoStore</a>
-
-            <div class="menu">
+            <a href="./index.html" class="c-azul">TecnoStore</a>
+            <div class="menu bg-blanco">
                 <nav>
                     <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/productos.html">Productos</a></li>
-                        <li><a href="./pages/sobre-nosotros.html">Quienes somos</a></li>
-                        <li><a href="./pages/reseñas.html">Reseñas</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                        <li><a href="./index.html" class="item-nav-activo">Inicio</a></li>
+                        <li><a href="./pages/productos.html" class="item-nav">Productos</a></li>
+                        <li><a href="./pages/sobre-nosotros.html" class="item-nav">Quienes somos</a></li>
+                        <li><a href="./pages/reseñas.html" class="item-nav">Reseñas</a></li>
+                        <li><a href="./pages/contacto.html" class="item-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
             <i class="fa-solid fa-bars" id="icon_menu"></i>
         </div>
-
     </header>
 
     <main>
         <!-- banner de inicio -->
-        <section class="banner">
-            <h1>TecnoStore</h1>
-            <button class="btn">COMPRA YA</button>
+        <section class="banner d-flex t-center dflex-column align-items-center justify-content-center">
+            <h1 class="c-blanco">TecnoStore</h1>
+            <button class="btn btn-azul">COMPRA YA</button>
         </section>
         <!-- Quienes somos -->
-        <section class="nosotros">
+        <section class="nosotros d-flex align-items-center dflex-column dflex-row-m">
             <div class="nosotros__texto">
-                <h2 class="nosotros__title">Quienes <span class="colorAzul">Somos</span></h2>
-                <p class="nosotros__cuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Earum ut illum
-                labore aut adipisci iusto natus eos quos distinctio laboriosam?</p>
+                <h2 class="nosotros__title t-center">Quienes <span class="azul">Somos</span></h2>
+                <p class="nosotros__cuerpo t-justify t-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Earum ut illum
+                    labore aut adipisci iusto natus eos quos distinctio laboriosam?</p>
             </div>
             <div class="nosotros__imagen">
                 <img src="img/sobre.png" alt="">
             </div>
         </section>
         <!-- Promociones -->
-        <section class="promociones">
-            <h2 class="promociones__title">Promociones</h2>
+        <section class="promociones bg-negro">
+            <h2 class="promociones__title t-center c-blanco">Promociones</h2>
             <div class="promociones__productos">
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
                     </div>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
                     </div>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
                     </div>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
                     </div>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
                     </div>
                 </div>
-                <div class="tarjeta">
+                <div class="tarjeta bg-blanco">
                     <img src="https://http2.mlstatic.com/D_Q_NP_958991-MLA46432737762_062021-AB.webp" alt="">
                     <div class="tarjeta__cuerpo">
                         <h4>$512.00</h4>
@@ -95,7 +92,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="t-center">
         <span class="footer__texto">© Roberto Miranda 2023</span>
     </footer>
     <script src="./js/script.js"></script>

@@ -1,0 +1,135 @@
+$justify-content:center, start, end, space-between, space-around, space-evenly;
+$align-items:center, flex-end, flex-start;
+$flex-d:column, row;
+//Breakpoints
+$breakpoints: (
+    ch: 576px,
+    m: 768px,
+    gr: 992px,
+    ex: 1200px
+);
+// Colores
+$colores: (
+    cielo:    #0d6efd,
+    morado:  #6f42c1,
+    rosa:    #d63384,
+    rojo:     #dc3545,
+    naranja:  #fd7e14,
+    amarillo:  #ffc107,
+    verde:   #198754,
+    azul: #00a3ff,
+    blanco:    #fff,
+    gris: #85888a,
+    negro:    #000
+);
+@each $nombre, $valor in $colores{
+    .c-#{$nombre}{
+        color: $valor;
+    }
+    .bg-#{$nombre}{
+        background-color: $valor;
+    }
+    .btn-#{$nombre}{
+        background-color: $valor;
+    }
+}
+//Alineacion de texto
+$text-align: (
+    center: center,
+    left: left,
+    right: right,
+    justify: justify
+);
+@each $alineacion, $valor in $text-align{
+    .t-#{$alineacion}{
+        text-align: $valor;
+    }
+}
+// Display
+$display: (
+    d-flex: flex,
+    d-grid: grid,
+    d-ib: inline-block,
+    d-i: inline,
+    d-b: block,
+    d-n: none
+);
+@each $disp, $valor in $display{
+    @each $v in $justify-content{
+        .justify-content-#{$v}{
+            justify-content: $v;
+        }
+    }
+    @each $va in $align-items{
+        .align-items-#{$va}{
+            align-items: $va;
+        }
+    }
+    @each $val in $flex-d{
+        .dflex-#{$val}{
+            flex-direction: $val;
+        }
+    }
+    .#{$disp}{
+        display: $valor;
+    }
+    @each $break, $pixel in $breakpoints{
+        @media (min-width: $pixel) {
+            @each $v in $justify-content{
+                .justify-content-#{$v}-#{$break}{
+                    justify-content: $v;
+                }
+            }
+            @each $va in $align-items{
+                .align-items-#{$va}-#{$break}{
+                    align-items: $va;
+                }
+            }
+            @each $val in $flex-d{
+                .dflex-#{$val}-#{$break}{
+                    flex-direction: $val;
+                }
+            }
+            .#{$disp}-#{$break}{
+                    display: $valor;
+                }
+            }
+    }
+}
+
+//Mixins y Media
+@mixin chico{
+    @media (min-width: map-get($breakpoints, ch)){
+        @content;
+    }
+}
+@mixin mediano{
+    @media (min-width: map-get($breakpoints, m)){
+        @content;
+    }
+}
+@mixin grande{
+    @media (min-width: map-get($breakpoints, gr)){
+        @content;
+    }
+}
+@mixin gigante{
+    @media (min-width: map-get($breakpoints, ex)){
+        @content;
+    }
+}
+//Mixins
+@mixin flex($justify, $align, $flex-d, $gap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $flex-d;
+    gap: $gap;
+}
+@mixin grid($col, $gap, $align, $justify){
+    display: grid;
+    grid-template-columns: $col;
+    gap: $gap;
+    align-items: $align;
+    justify-items: $justify;
+}
