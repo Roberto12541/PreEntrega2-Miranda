@@ -84,12 +84,18 @@ footer{
 }
 @include grande(){
     .nosotros{
+        max-width: 980px;
+        margin: 40px auto;
         & .nosotros__imagen{
             width: 80%;
         }
     }
-    .promociones .promociones__productos{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .promociones {
+        .promociones__productos{
+            max-width: 1120px;
+            margin: 0 auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
     }
 }
 @include gigante(){

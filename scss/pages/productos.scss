@@ -1,7 +1,7 @@
 .productos{
     margin: 20px 0px;
     & h2{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     & .galeria-productos{
         grid-template-columns: 1fr 1fr;
@@ -9,6 +9,7 @@
         justify-items: center;
         & .tarjeta{
             max-width: 200px;
+            padding: 10px;
             background-color: #f5f5f5;
             border-radius: 5px;
             overflow: hidden;

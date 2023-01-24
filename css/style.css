@@ -1522,10 +1522,16 @@ footer {
   }
 }
 @media (min-width: 992px) {
+  .nosotros {
+    max-width: 980px;
+    margin: 40px auto;
+  }
   .nosotros .nosotros__imagen {
     width: 80%;
   }
   .promociones .promociones__productos {
+    max-width: 1120px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
@@ -1541,7 +1547,7 @@ footer {
   margin: 20px 0px;
 }
 .productos h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .productos .galeria-productos {
   grid-template-columns: 1fr 1fr;
@@ -1550,6 +1556,7 @@ footer {
 }
 .productos .galeria-productos .tarjeta {
   max-width: 200px;
+  padding: 10px;
   background-color: #f5f5f5;
   border-radius: 5px;
   overflow: hidden;
